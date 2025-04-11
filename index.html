@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Product Landing Page</title>
+  <!-- META PIXEL CODE: Paste your Meta Pixel code here -->
+  <!-- Example:
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID'); // Replace with your Pixel ID
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+  /></noscript>
+  -->
+  <!-- GOOGLE ANALYTICS CODE: Paste your Google Analytics code here -->
+  <!-- Example:
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_ANALYTICS_ID'); 
+  </script>
+  -->
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+    .container { max-width: 800px; margin: auto; }
+    header, section, footer { margin-bottom: 20px; }
+    .product-image { max-width: 100%; height: auto; }
+    form input, form button { display: block; margin: 10px 0; padding: 10px; width: 100%; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Product Name</h1>
+      <p>Add a catchy tagline or product benefits here.</p>
+    </header>
+
+    <section id="product-details">
+      <img src="product.jpg" alt="Product Image" class="product-image">
+      <p>Describe your product, its features, and what makes it special.</p>
+    </section>
+
+    <section id="order-form">
+      <h2>Order Now</h2>
+      <form id="orderForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <input type="text" name="address" placeholder="Your Address" required>
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Your Company Name</p>
+    </footer>
+  </div>
+</body>
+</html>
